@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Billionaire Statistics 2023</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #34495e;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .billionaire {
+            text-align: center;
+            margin: 20px;
+        }
+        .billionaire img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .billionaire h3 {
+            margin-top: 10px;
+        }
+        .billionaire p {
+            font-size: 16px;
+            color: #333;
+        }
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Billionaire Statistics 2023</h1>
+        <p>Top Billionaires of the World</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href={{url_for('home')}}>Home</a>
+         <a href={{url_for('dashboard')}}>dashboard</a>
+        <a href={{url_for('contact')}}>Contact</a>
+        <a href={{url_for('help')}}>Help</a>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="billionaire">
+            <img src="https://via.placeholder.com/150" alt="Elon Musk">
+            <h3>Elon Musk</h3>
+            <p>$230 Billion</p>
+        </div>
+        <div class="billionaire">
+            <img src="https://via.placeholder.com/150" alt="Jeff Bezos">
+            <h3>Jeff Bezos</h3>
+            <p>$145 Billion</p>
+        </div>
+        <div class="billionaire">
+            <img src="https://via.placeholder.com/150" alt="Bernard Arnault">
+            <h3>Bernard Arnault</h3>
+            <p>$180 Billion</p>
+        </div>
+        <div class="billionaire">
+            <img src="https://via.placeholder.com/150" alt="Bill Gates">
+            <h3>Bill Gates</h3>
+            <p>$105 Billion</p>
+        </div>
+        <div class="billionaire">
+            <img src="https://via.placeholder.com/150" alt="Warren Buffet">
+            <h3>Warren Buffett</h3>
+            <p>$90 Billion</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Billionaire Statistics | All Rights Reserved</p>
+    </footer>
+</body>
+</html>

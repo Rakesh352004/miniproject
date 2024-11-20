@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Help - Billionaire Statistics</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #34495e;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .main-content {
+            padding: 30px;
+            text-align: center;
+        }
+        .faq-section {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: left;
+        }
+        .faq-button {
+            background-color: #2c3e50;
+            color: white;
+            padding: 15px;
+            border: none;
+            width: 100%;
+            text-align: left;
+            font-size: 18px;
+            cursor: pointer;
+            margin: 5px 0;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .faq-button:hover {
+            background-color: #34495e;
+        }
+        .faq-content {
+            display: none;
+            background-color: #ecf0f1;
+            padding: 15px;
+            margin: 5px 0;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Billionaire Statistics</h1>
+    <p>Get help and find answers to common questions.</p>
+</header>
+
+<nav>
+   <a href={{url_for('home')}}>Home</a>
+         <a href={{url_for('dashboard')}}>dashboard</a>
+        <a href={{url_for('contact')}}>Contact</a>
+        <a href={{url_for('help')}}>Help</a>
+</nav>
+
+<div class="main-content">
+    <h2>Frequently Asked Questions (FAQs)</h2>
+    <p>If you have any questions about the Billionaire Statistics website, take a look at the FAQs below.</p>
+
+    <div class="faq-section">
+        <button class="faq-button" onclick="toggleFAQ(1)">What is Billionaire Statistics?</button>
+        <div id="faq1" class="faq-content">
+            <p>Billionaire Statistics is a platform that provides up-to-date information and data on the world's wealthiest individuals, including their net worth, industries, and growth trends.</p>
+        </div>
+
+        <button class="faq-button" onclick="toggleFAQ(2)">How do you collect data for billionaires?</button>
+        <div id="faq2" class="faq-content">
+            <p>We gather data from publicly available financial reports, business news, and trusted databases to ensure the most accurate and current information about billionaires.</p>
+        </div>
+
+        <button class="faq-button" onclick="toggleFAQ(3)">Can I track a specific billionaire's net worth over time?</button>
+        <div id="faq3" class="faq-content">
+            <p>Yes, our platform allows you to track specific billionaires' net worth and compare it over time to see growth or decline.</p>
+        </div>
+
+        <button class="faq-button" onclick="toggleFAQ(4)">Do you update billionaire data regularly?</button>
+        <div id="faq4" class="faq-content">
+            <p>Yes, we update billionaire data regularly to reflect changes in net worth, business investments, and market fluctuations.</p>
+        </div>
+    </div>
+</div>
+
+
+
+<script>
+    function toggleFAQ(faqNumber) {
+        var content = document.getElementById('faq' + faqNumber);
+        if (content.style.display === "block") {
+            content.style.display = "none";
+        } else {
+            content.style.display = "block";
+        }
+    }
+</script>
+<footer>
+    <p>&copy; 2024 Billionaire Statistics. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
